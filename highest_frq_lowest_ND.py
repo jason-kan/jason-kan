@@ -9,7 +9,7 @@ while (len(freq) < 300):
         first_line = fi.readline()
         for line in fi:
             fields=line.split()
-            if len(fields[0]) == 2:
+            if len(fields[0]) == 1: # 1 for monosyllabic, 2 for disyllabic 
                 if fields[0] not in freq:
                     if float(fields[3]) > n:
                         n = float(fields[3])
